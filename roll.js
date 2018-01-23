@@ -13,12 +13,12 @@ function roll(pins){
 		}
 	}
 	let totalScore = retArray.reduce((prev, curr)=>prev+curr,0);
-	//console.log(retArray);
+	console.log(retArray);
 	return totalScore;
 	//return retArray;
 }
 // to be deleted
-//roll([3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6]);
-//console.log(roll([3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6]));
+// roll([3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6]);
+// console.log(roll([3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6]));
 // ends here
 module.exports = roll;
