@@ -27,3 +27,7 @@ test('Test for multiple spare: ', () =>
 test('Test for multiple spare and strike at end: ', () =>
 	expect(roll([3, 6, 4, 6, 4, 6, 4, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 10,6,6])).
 		toBe(117));
+
+test('Test for spare and multiple strikes: ', () =>
+	expect(roll([4, 6, 10, 10, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6])).
+		toBe(125));
