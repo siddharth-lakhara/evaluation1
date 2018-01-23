@@ -1,6 +1,7 @@
 function roll(pins){
 	let retArray = [];
-	for (let i=0; i<pins.length && i<20; i = i+2){
+	let loop = 0;
+	for (let i=0; i<pins.length && loop<10; i = i+2, loop++){
 		if (pins[i] + pins[i+1] > 10){  // strike
 			retArray.push(10 + pins[i+1] + pins[i+2]);
 			i -= 1; // so that one frame is not missed
