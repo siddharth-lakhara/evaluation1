@@ -19,3 +19,11 @@ test('Test for spare at the end: ', () =>
 test('Test for strike at the end: ', () =>
 	expect(roll([3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 10, 6, 6])).
 		toBe(103));
+
+test('Test for multiple spare: ', () =>
+	expect(roll([3, 6, 4, 6, 4, 6, 4, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6])).
+		toBe(104));
+
+test('Test for multiple spare and strike at end: ', () =>
+	expect(roll([3, 6, 4, 6, 4, 6, 4, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 10,6,6])).
+		toBe(117));
